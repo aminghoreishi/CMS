@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.18/dark.min.css">
+    <link rel="stylesheet" href="./final.css">
+
+
+</head>
+
+<body class="bg-white dark:bg-slate-900 ">
+    <!--menu mobile -->
+    <div class="bg-white dark:bg-slate-900 hidden dark:*:text-white container mx-auto mt-4 border-b-2 pb-4 lg:hidden">
+        <div class="flex justify-between">
+            <h1 class="text-center">Dashbord</h1>
+            <svg class="size-5 clickNav_open">
+                <use href="#menu"></use>
+            </svg>
+        </div>
+    </div>
+
+    <!-- * Div Dashbord -->
+    <div class="flex">
+        <!-- * Dash -->
+        <div class="min-h-screen">
+            <div
+                class="bg-gradient-to-b from-blue-400 to-slate-500 dark:from-blue-800 dark:to-black fixed -left-[309px] transition-all top-0 bottom-0 z-10 h-full  click__Menu w-[200px] md:w-[300px] *:text-white p-5">
+                <div class="">
+                    <h1 class="font-semibold text-center  text-2xl">Dashbord</h1>
+                </div>
+                <ul class="mt-12 *:font-semibold flex flex-col gap-y-8">
+                    <li><a class="inline-flex items-center gap-x-2 transition-all hover:text-orange-400"
+                            href="./chart.html">
+                            <svg class="size-5">
+                                <use href="#chart"></use>
+                            </svg>
+                            Chart
+                        </a></li>
+                    <li><a class="inline-flex items-center gap-x-2 transition-all hover:text-orange-400"
+                            href="./information.html">
+                            <svg class="size-5">
+                                <use href="#info"></use>
+                            </svg>
+                            Information
+                        </a></li>
+                    <li><a class="inline-flex items-center gap-x-2 transition-all hover:text-orange-400"
+                            href="./user.html">
+                            <svg class="size-5">
+                                <use href="#user2"></use>
+                            </svg>
+                            All User
+                        </a></li>
+                    <li><button class="inline-flex items-center  gap-x-2 transition-all hover:text-orange-400">
+                            <svg class="size-5 block dark:hidden">
+                                <use href="#night"></use>
+                            </svg>
+                            <svg class="size-5 hidden dark:block">
+                                <use href="#sun"></use>
+                            </svg>
+                            <p class="darkmode">Drak Mode</p>
+
+                        </button></li>
+                    <li><button class="inline-flex items-center gap-x-2 transition-all logout hover:text-red-400">
+                            <svg class="size-5 svgChange">
+                                <use href="#signout"></use>
+                            </svg>
+                            Sign Out
+                        </button></li>
+                </ul>
+            </div>
+        </div>
+        <!-- * Container two -->
+
+        <div class="flex flex-col w-full">
+            <div class="container mx-auto mt-3">
+                <div class="min-h-screen  w-full flex flex-col gap-y-5 dark:*:text-white ">
+                    <div
+                        class=" items-center justify-between border-b-2 pb-3 border-gray-300  flex dark:border-b-gray-200/20">
+                        <div class="">
+                            <h1 class="text-2xl font-bold textHome"></h1>
+                        </div>
+                        <div class="flex items-center gap-x-9">
+                            <div class=" items-center gap-x-1 hidden md:flex">
+                                <div class="size-4 rounded-full overflow-hidden">
+                                    <img class="size-full" src="./img/Flag-United-States-of-America.webp" alt="">
+                                </div>
+                                <div class="">
+                                    <p class="font-semibold">Eng(us)</p>
+                                </div>
+
+                            </div>
+                            <div class=" items-center gap-x-4 hidden md:flex">
+                                <div
+                                    class="size-12 rounded-xl overflow-hidden border-2 border-gray-500  dark:border-gray-100/20">
+                                    <img class="size-full" src="./img/39327090-b02a-42cd-8f1d-cf236c2d5b2e.jpg" alt="">
+                                </div>
+                                <div class="font-semibold">
+                                    <h1 class="name__admin capitalize"></h1>
+                                    <p class="text-xs">Admin</p>
+                                </div>
+                            </div>
+                            <div class="clickShow">
+                                <svg class="size-7 cursor-pointer">
+                                    <use href="#menu"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * grid item -->
+                    <div class="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-5">
+                        <div class="shadow-2xl xl:col-span-2 p-3 rounded-xl dark:border-2 dark:border-gray-200/10">
+                            <div class="flex items-center justify-between">
+                                <div class="flex flex-col gap-y-2">
+                                    <h1 class="font-bold">Today's Sales</h1>
+                                    <p class="text-gray-500 text-xs dark:text-gray-100/50">Sales Summery</p>
+                                </div>
+                                <div class="">
+                                    <button
+                                        class="flex items-center font-bold gap-x-1 border-2 p-2 rounded-xl transition-all hover:bg-blue-600 hover:text-white border-blue-600 text-blue-600">
+                                        <svg class="size-5">
+                                            <use href="#download"></use>
+                                        </svg>
+                                        Export
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-5">
+                                <div class="bg-red-400/70 flex flex-col p-3 rounded-xl gap-y-3 h-full">
+                                    <div class="">
+                                        <svg class="size-12 bg-red-600  p-3 rounded-full stroke-white">
+                                            <use href="#chart2"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="flex flex-col gap-y-2">
+                                        <h1 class="font-bold text-2xl">$1k</h1>
+                                        <p class="font-bold">Total Sales</p>
+                                        <p class="text-xs text-blue-900 font-bold">+8% from yesterday</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-400/70 flex flex-col p-3 rounded-xl gap-y-3 h-full">
+                                    <div class="">
+                                        <svg class="size-12 bg-blue-600  p-3 rounded-full stroke-white">
+                                            <use href="#sold"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="flex flex-col gap-y-2">
+                                        <h1 class="font-bold text-2xl">5</h1>
+                                        <p class="font-bold">Product Sales</p>
+                                        <p class="text-xs text-blue-900 font-bold">+1.2% from yesterday</p>
+                                    </div>
+                                </div>
+                                <div class="bg-yellow-400/50 flex flex-col p-3 rounded-xl gap-y-3 h-full">
+                                    <div class="">
+                                        <svg class="size-12 bg-yellow-600  p-3 rounded-full stroke-white">
+                                            <use href="#doc"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="flex flex-col gap-y-2">
+                                        <h1 class="font-bold text-2xl">300</h1>
+                                        <p class="font-bold">Total Order</p>
+                                        <p class="text-xs text-blue-900 font-bold">+5% from yesterday</p>
+                                    </div>
+                                </div>
+                                <div class="bg-green-400/50 flex flex-col p-3 rounded-xl gap-y-3 h-full">
+                                    <div class="">
+                                        <svg class="size-12 bg-green-600  p-3 rounded-full stroke-white">
+                                            <use href="#user2"></use>
+                                        </svg>
+
+                                    </div>
+                                    <div class="flex flex-col gap-y-2">
+                                        <h1 class="font-bold text-2xl">8</h1>
+                                        <p class="font-bold">New Customers</p>
+                                        <p class="text-xs text-blue-900 font-bold">0.5% from yesterday</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--* chart js -->
+                        <div class="shadow-2xl p-3 rounded-xl borderChart dark:border-2 dark:border-gray-200/10">
+                            <h1 class="font-bold">Visitor</h1>
+                            <canvas id="mychart"></canvas>
+                        </div>
+                        <!--* chart js end -->
+
+
+                        <!-- * user -->
+
+                        <div class="">
+                            <div class="shadow-2xl xl:col-span-2 p-3 rounded-xl dark:border-2 dark:border-gray-200/10">
+                                <div class="flex items-center justify-between">
+                                    <h1 class="font-semibold">Users</h1>
+                                    <h1 class="font-semibold"><a class="text-blue-600" href="./user.html">Show All</a>
+                                    </h1>
+                                </div>
+                                <div
+                                    class="mt-4 flex flex-col gap-y-4 h-[300px]  user__location p-2  sm:p-3 overflow-auto">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- x user end -->
+
+                        <!-- * Modal -->
+                        <div
+                            class="shadow-2xl xl:col-span-2 p-3   rounded-xl dark:border-2 h-auto dark:border-gray-200/10">
+                            <div class="">
+                                <h1 class="font-semibold">Tasks</h1>
+                            </div>
+
+                            <div class="flex flex-col justify-center  p-3 sm:p-5 h-full">
+                                <div class="border-2 dark:border-gray-200/30 p-3 rounded-xl">
+
+                                    <div class="wraper">
+                                        <div class="flex justify-between">
+                                            <h1>Task One</h1>
+                                            <svg class="size-5 arrow transition-all">
+                                                <use href="#arrow_bottoom"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content transition-all relative overflow-hidden"
+                                            style="height: 0px;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sit
+                                            explicabo enim quo consequatur delectus, vel ipsum ut, sunt nisi excepturi
+                                            totam ratione a veniam maxime quidem fugiat pariatur!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-2 dark:border-gray-200/30 p-3 rounded-xl mt-8">
+
+                                    <div class="wraper">
+                                        <div class="flex justify-between">
+                                            <h1>Task Two</h1>
+                                            <svg class="size-5 arrow   transition-all">
+                                                <use href="#arrow_bottoom"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="content select-none transition-all relative overflow-hidden"
+                                            style="height: 0px;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sit
+                                            explicabo enim quo consequatur delectus, vel ipsum ut, sunt nisi excepturi
+                                            totam ratione a veniam maxime quidem fugiat pariatur!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-2 p-3  dark:border-gray-200/30 rounded-xl mt-8">
+
+
+                                    <div class="wraper">
+                                        <div class="flex justify-between">
+                                            <h1>Task Three</h1>
+                                            <svg class="size-5 arrow  transition-all">
+                                                <use href="#arrow_bottoom"></use>
+                                            </svg>
+                                        </div>
+                                        <div class=" select-none transition-all relative overflow-hidden"
+                                            style="height: 0px;">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sit
+                                            explicabo enim quo consequatur delectus, vel ipsum ut, sunt nisi excepturi
+                                            totam ratione a veniam maxime quidem fugiat pariatur!
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- x Modal end -->
+
+                    </div>
+                    <!-- x grid item end-->
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- * start overlay -->
+    <div class="bg-black/40 fixed inset-0 hidden overlay"></div>
+    <div class="bg-black/40 fixed inset-0 hidden overlay2"></div>
+    <!-- x end overlay -->
+
+
+    <!-- modal -->
+    <div
+        class="fixed z-10 flex showModalU justify-center min-h-screen items-center top-0 w-full     transition-all duration-300 opacity-0 p-5 invisible">
+        <div class=" bg-white p-5 w-[300px] md:w-[400px] text-black   dark:bg-slate-800 dark:*:text-white  rounded-xl ">
+            <div class="flex justify-between items-center border-b-2 border-b-gray-200 dark:border-b-gray-100/25 pb-3">
+                <div class="font-semibold">Edit</div>
+                <div class="">
+                    <svg class="size-7 cursor-pointer closeMOd">
+                        <use href="#x"></use>
+                    </svg>
+                </div>
+            </div>
+            <form class="mt-2">
+                <div class="flex flex-col gap-y-3">
+
+                    <div class="flex flex-col ">
+                        <label for="">Name</label>
+                        <input
+                            class="mt-2 name__elem bg-transparent text-black dark:text-white outline-none border-2 p-2 rounded-xl border-gray-200/25 dark:border-gray-200/25/25"
+                            required type="text" placeholder="Between 3 & 12"></input>
+                    </div>
+                    <div class="flex flex-col ">
+                        <label class="" for="">Password</label>
+                        <div class="relative mt-2">
+                            <input
+                                class="input_elem input__pass transition-all  text-black dark:text-white border-gray-200/25 dark:border-gray-200/25/25"
+                                autocomplete="new-username" id="input__pass" name="input__pass" type="password" placeholder="Between 8 & 12"
+                                required>
+
+
+                        </div>
+                    </div>
+                    <div class="flex flex-col ">
+                        <label for="">Phone</label>
+                        <input
+                            class="mt-2 phone__elem bg-transparent text-black dark:text-white outline-none border-2 p-2 rounded-xl border-gray-200/25 dark:border-gray-200/25/25"
+                            required type="text" placeholder="(09123456789)"></input>
+                    </div>
+                    <div class="flex flex-col ">
+                        <label for="">Email</label>
+                        <input
+                            class="mt-2 email__phone bg-transparent text-black dark:text-white  outline-none border-2 p-2 rounded-xl border-gray-200/25 dark:border-gray-200/25/25"
+                            required type="text" placeholder="(Nima@gmail.com)"></input>
+                    </div>
+                    <div class="mt-3">
+                        <button
+                            class="bg-yellow-500 buttonj w-full p-2 rounded-xl text-black font-semibold transition-all hover:bg-yellow-600 ">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- end modal -->
+
+
+
+    <svg class="hidden">
+        <symbol id="chart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+        </symbol>
+        <symbol id="chart2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+        </symbol>
+        <symbol id="info" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+        </symbol>
+        <symbol id="signout" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+        </symbol>
+        <symbol id="night" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </symbol>
+        <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+        </symbol>
+        <symbol id="user" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="dark:stroke-white stroke-black">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </symbol>
+        <symbol id="user2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </symbol>
+        <symbol id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="stroke-black dark:stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </symbol>
+        <symbol id="download" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+        </symbol>
+        <symbol id="doc" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+        </symbol>
+
+        <symbol id="sold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="stroke-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+        </symbol>
+
+        <symbol id="delete" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+        </symbol>
+        <symbol id="edit" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+        </symbol>
+
+        <symbol id="arrow_bottoom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </symbol>
+        <symbol id="x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </symbol>
+
+
+
+    </svg>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
